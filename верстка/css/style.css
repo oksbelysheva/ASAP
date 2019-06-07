@@ -1,0 +1,98 @@
+body{
+    background: #E5E5E5;
+
+    font-family: "Roboto", Arial, sans-serif ;
+    font-style: normal;
+    font-weight: normal;
+    color: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+h1, h2{
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header{
+    background-color: #3A75A0;
+    background-image: linear-gradient(
+                      rgba(58, 117, 160, 0.9), 
+                      rgba(58, 117, 160, 0.9)
+                      ),
+                      url("../img/bg.jfif")
+                      ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:  #FFFFFF;
+}
+
+.logo p:first-child{    
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+
+.logo p:last-child{    
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header .phone{
+    font-size: 24px;
+    line-height: 28px;
+
+    letter-spacing: 0.03em;
+}
+
+.header .navigation{
+    list-style: none;
+}
+
+.header .navigation a{
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+
+    color: #3A75A0;
+}
+
+.features-list{
+    text-decoration: none;
+}
+
+.button{
+    font: inherit;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle;
+
+    background: #F9B050;
+    border-radius: 6px; 
+}

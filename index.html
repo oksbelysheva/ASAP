@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+</head>
+<body>
+	<form id="summaMoney">
+		<p>
+			<label for="userMoney">Сумма:</label>
+			<input type="number" name="userMoney" id = "userMoney">
+		</p>
+		<p><input type="button" id="btnResult" value="Get result"></p>
+	</form>
+	<script>
+		var banknotes = [5000, 1000, 500, 100, 50];
+		function getMoney(amount){
+			let countsBanknotes = {};
+
+			banknotes.forEach((e) => {
+				countsBanknotes[e] = 0;
+			});
+
+			banknotes.forEach((e) => {
+				while ( amount - e >= 0 ){
+					amount -= e;
+					countsBanknotes[e]++;
+				}
+			});
+
+			return amount > 0 ? 'warn' : countsBanknotes;
+		}
+		function setMoneyResultInNode(getMoneyResult){
+			let resultElement;
+			let oldResult = document.getElementById('resultElement');
+			if ( oldResult != null &&
+				 oldResult != NaN &&
+				 oldResult != undefined){
+				document.body.removeChild(oldResult);
+			}
+			
+			if ( getMoneyResult == 'warn' ){
+				resultElement = document.createElement('p');
+				resultElement.innerHTML = 'warn';
+			}
+			else{
+				resultElement = document.createElement('ul');
+				for (key in getMoneyResult) {
+					let li = document.createElement('li');
+					li.innerHTML = `${key} ${getMoneyResult[key]}`;
+					resultElement.appendChild(li);
+				}
+			}
+			resultElement.setAttribute("id", "resultElement");
+			document.body.appendChild(resultElement);
+		}
+
+		let form = document.querySelector("#summaMoney"),
+    	btn = document.querySelector("#btnResult");
+    
+		btn.addEventListener("click", function(e){
+  			let input = form.elements.userMoney.value;
+			let countsBanknotes = getMoney(input);
+			setMoneyResultInNode(countsBanknotes);
+  			return false;
+		});
+
+		
+	</script>
+	
+</body>
+</html>
