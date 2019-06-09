@@ -6,136 +6,191 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="container header">
-        <div class="logo">
-            <p>Сотников<br> и партнеры</p>
-            <p>Юридическая компания</p>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-8">
+                <div class="overlay">
+                    <div class="logo-block">
+                        <div class="logo">
+                            <p>Сотников<br> и партнеры</p>
+                            <div>
+                                <hr>
+                            </div>
+                            <span></span>
+                            <p>Юридическая<br> компания</p>
+                        </div>
+                        <div class="phone">
+                            <p>8 (8452) 34-77-39</p>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div>
+                            <h1>Услуги адвоката по<br> уголовным делам</h1>
+                            <hr>
+                        </div>
+                        <a href="#contacts" class="btn button">получить срочную консультацию</a>
+                        <div class="photo">
+                            <img src="img/photo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <nav class="navbar navigation">
+                    <ul>
+                        <li class="nav-item"><a href="#">Главная</a></li>
+                        <li class="nav-item"><a href="#">О нас</a></li>
+                        <li class="nav-item"><a href="#contacts">Контакты</a></li>
+                        <li class="nav-item"><a href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <div class="quote">
+                    <p>Всегда на защите ваших<br> прав — от консультации<br> до результата</p>
+                </div>
+            </div>
         </div>
-        <p class="phone">8 (8452) 34-77-39</p>
-        <h1>Услуги адвоката по уголовным делам</h1>
-        <a href="#consultancy" class="button">получить срочную консультацию</a>
-        <article class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="features-list">
-                <li>
-                    <p>Приеду в течение 2 часов в экстренной ситуации</p>
-                </li>
-                <li>
-                    <p>Бесплатно проконсультирую по телефону</p>
-                </li>
-                <li>
-                    <p>Детально изучу все материалы дела в офисе</p>
-                </li>
-            </ul>
-        </article>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#">Услуги</a></li>
-            </ul>
-        </nav>
-        <div class="quote">
-            <p>Всегда на защите ваших прав — от консультации до результата</p>
+
+        <div class="row">
+            <div class="col-7">
+                <article class="features">
+                    <h2 class="visually-hidden">Преимущества</h2>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <p>Приеду в течение 2 часов в экстренной ситуации</p>
+                        </li>
+                        <li class="feature-item">
+                            <p>Бесплатно проконсультирую по телефону</p>
+                        </li>
+                        <li class="feature-item">
+                            <p>Детально изучу все материалы дела в офисе</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <div class="col-5">
+                <div>
+                    <div class="info">
+                        <p class="info-second-name">Сотников</p>
+                        <p class="info-first-name">Алексей Евгеньевич </p>
+                        <p class="info-work">Опыт юридической практики – более 10 лет<br> Член адвокатской палаты Саратовской области</p>
+                        <div class="social">
+                            <p><img src="img/instagram.png"></p>
+                            <p><img src="img/facebook.png"></p>
+                            <p><img src="img/vk.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="img/Arrow.png">
+                </div>
+            </div>
+
+
         </div>
-        <article class="info">
-            <p>Сотников</p>
-            <p>Алексей Евгеньевич </p>
-            <p>Опыт юридической практики – более 10 лет<br>
-                Член адвокатской палаты Саратовской области</p>
-        </article>
+
     </header>
-    <main class="container">
-        <div>
-            <section>
-                <h2>Законченные дела</h2>
-                <table class="finish-deal">
-                    <th>
-                        <tr>
-                            <td>2019 год</td>
-                            <td>2018 год</td>
-                            <td>2017 год</td>
-                            <td>2016 год</td>
-                        </tr>
-                    </th>
-                    <tr>
-                        <td>
-                            А57-22035/2017
-                            А57-15752/2017
-                            А57-26645/2017
-                            А57-4892/2017
-                            А57-28195/2017
-                            А57-244/2018
-                        </td>
-                        <td>
-                            А57-22035/2017
-                            А57-15752/2017
-                            А57-26645/2017
-                            А57-4892/2017
-                            А57-28195/2017
-                            А57-244/2018
-                        </td>
-                        <td>
-                            А57-22035/2017
-                            А57-15752/2017
-                            А57-26645/2017
-                            А57-4892/2017
-                            А57-28195/2017
-                            А57-244/2018
-                        </td>
-                        <td>
-                            А57-22035/2017
-                            А57-15752/2017
-                            А57-26645/2017
-                            А57-4892/2017
-                            А57-28195/2017
-                            А57-244/2018
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="gallery">
-                <h2 class="visually-hidden">Фотогалерея</h2>
-                <figure class="gallery-content">
-                    <a href="gallery.html"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
-                </figure>
-                <ul class="gallery-switches">
-                    <li><button class="button gallery-button gallery-button-back">Назад</button></li>
-                    <li><button class="button gallery-button gallery-button-next">Вперед</button></li>
-                </ul>
-            </section>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <section>
+                    <h2>Законченные дела</h2>
+                    <table class="finish-deal">
+                        <thead>
+                            <tr>
+                                <td>2019 год</td>
+                                <td>2018 год</td>
+                                <td>2017 год</td>
+                                <td>2016 год</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>А57-22035/2017</td>
+                                <td>А57-22035/2017</td>
+                                <td>А57-22035/2017</td>
+                                <td>А57-22035/2017</td>
+                            </tr>
+                            <tr>
+                                <td>А57-15752/2017</td>
+                                <td>А57-15752/2017</td>
+                                <td>А57-15752/2017</td>
+                                <td>А57-15752/2017</td>
+                            </tr>
+                            <tr>
+                                <td>А57-26645/2017</td>
+                                <td>А57-26645/2017</td>
+                                <td>А57-26645/2017</td>
+                                <td>А57-26645/2017</td>
+                            </tr>
+                            <tr>
+                                <td>А57-4892/2017</td>
+                                <td>А57-4892/2017</td>
+                                <td>А57-4892/2017</td>
+                                <td>А57-4892/2017</td>
+                            </tr>
+                            <tr>
+                                <td>А57-28195/2017 </td>
+                                <td>А57-28195/2017 </td>
+                                <td>А57-28195/2017 </td>
+                                <td>А57-28195/2017 </td>
+                            </tr>
+                            <tr>
+                                <td>А57-244/2018</td>
+                                <td>А57-244/2018</td>
+                                <td>А57-244/2018</td>
+                                <td>А57-244/2018</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </section>
+            </div>
+            <div class="col-6">
+                <section class="gallery">
+                    <h2 class="visually-hidden">Фотогалерея</h2>
+                    <figure class="gallery-content">
+                        <a href="gallery.html"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+                    </figure>
+                    <ul class="gallery-switches">
+                        <li><button class="button gallery-button gallery-button-back">Назад</button></li>
+                        <li><button class="button gallery-button gallery-button-next">Вперед</button></li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <section class="contacts" id="contacts">
-            <h2 class="visually-hidden">Контактная информация</h2>
-            <form class="consultancy" method="POST">
-                <label for="name" class="visually-hidden">Ваше имя</label>
-                <input type="text" name="name" id="name" placeholder="Ваше имя" value="">
-                <label for="phone" class="visually-hidden">Ваш телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" value="">
-                <label for="message" class="visually-hidden">Ваше сообщение</label>
-                <input type="text" name="message" id="message" placeholder="Ваше сообщение" value="">
-                <button type="submit">Получить консультацию</button>
-            </form>
-        </section>
-        <div>
-            <section>
-                <img src="img/map.jpg" width="1230" height="703" alt="
+    </main>
+    <section class="contacts" id="contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <form class="consultancy" method="POST">
+            <label for="name" class="visually-hidden">Ваше имя</label>
+            <input type="text" name="name" id="name" placeholder="Ваше имя" value="">
+            <label for="phone" class="visually-hidden">Ваш телефон</label>
+            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" value="">
+            <label for="message" class="visually-hidden">Ваше сообщение</label>
+            <input type="text" name="message" id="message" placeholder="Ваше сообщение" value="">
+            <button type="submit">Получить консультацию</button>
+        </form>
+    </section>
+    <div>
+        <section>
+            <img src="img/map.jpg" width="1230" height="703" alt="
                 Наш адрес:
                 г. Саратов, ул. Н.Г. Чернышевского, 153, 11 этаж, офис 1103
                 Наш телефон: 8 (8452) 713-711
                 Наш E-mail:advokatsotnikov@mail.ru">
-            </section>
-        </div>
+        </section>
+    </div>
     </main>
-    <footer class="container">
+    <footer class="container-fluid">
         <p>Copyright @ 2019 «Сотников и партнеры»<br> Все права защищены</p>
         <p>Пользовотельское соглашение и<br> политика конфиденциальности</p>
         <p>Разработка сайта<br> Digital - агенство ASAP</p>
     </footer>
+    <script type="text/javascript" src='js/main.js'></script>
 </body>
 
 </html>

@@ -1,7 +1,6 @@
-body{
+body {
     background: #E5E5E5;
-
-    font-family: "Roboto", Arial, sans-serif ;
+    font-family: "Roboto", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #404040;
@@ -10,20 +9,24 @@ body{
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
-
-h1, h2{
+h1,
+h2 {
     font-family: "Roboto Slab", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.visually-hidden{
+li {
+    list-style-type: none
+}
+
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -34,65 +37,329 @@ a{
     overflow: hidden;
 }
 
-.header{
-    background-color: #3A75A0;
-    background-image: linear-gradient(
-                      rgba(58, 117, 160, 0.9), 
-                      rgba(58, 117, 160, 0.9)
-                      ),
-                      url("../img/bg.jfif")
-                      ;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:  #FFFFFF;
+.col-7 {
+    padding: 0;
 }
 
-.logo p:first-child{    
+.header .col-8 {
+    background-image: url("../img/bg.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    color: #FFFFFF;
+    float: left;
+}
+
+.header {
+    position: relative;
+}
+
+.overlay {
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(58, 117, 160, 0.9);
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-block {
+    margin-top: 10px;
+}
+
+.logo-block,
+.image-block {
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.logo p:first-child {
     font-family: "Roboto Slab", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 41px;
     text-transform: uppercase;
+    float: left;
+    margin: 0;
 }
 
-.logo p:last-child{    
+.logo p:last-child {
+    float: left;
     font-size: 18px;
     line-height: 27px;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.header .phone{
+.logo div {
+    float: left;
+    height: 100%;
+}
+
+.logo hr {
+    width: 2px;
+    margin-left: auto;
+    height: 70px;
+    background-color: #ffffff;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header .phone {
+    width: 50%;
+    float: right;
+    vertical-align: middle;
     font-size: 24px;
     line-height: 28px;
-
     letter-spacing: 0.03em;
 }
 
-.header .navigation{
+.phone p {
+    float: right;
+    margin-right: 25px;
+}
+
+.phone p::before {
+    content: " ";
+    height: 21.7px;
+    width: 21.7px;
+    margin-right: 5px;
+    background-image: url("../img/telephone.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    float: left;
+}
+
+.image-block h1 {
+    margin-top: 100px;
+}
+
+.image-block hr {
+    width: 100%;
+    size: 2px;
+    background-color: #ffffff;
+}
+
+.image-block .button {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.navigation {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation a {
+    font-size: 16px;
+}
+
+.header .photo {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 20%;
+}
+
+.header .image-block {
+    position: relative;
+}
+
+.header .photo img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    margin-right: -20px;
+}
+
+.header .navigation {
     list-style: none;
 }
 
-.header .navigation a{
+.header .navigation a {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.03em;
-
     color: #3A75A0;
 }
 
-.features-list{
-    text-decoration: none;
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #3A75A0;
+    color: white;
 }
 
-.button{
-    font: inherit;
+.feature-item {
+    width: 300px;
     text-align: center;
+    font-size: 20px;
+}
+
+.feature-item:not(:last-child) {
+    margin-right: 100px;
+}
+
+.button {
+    font: inherit;
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 14px;
-    vertical-align: middle;
-
     background: #F9B050;
-    border-radius: 6px; 
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    width: 410px;
+    height: 75px;
+}
+
+.feature-item::before {
+    content: " ";
+    height: 47px;
+    width: 47px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.feature-item:nth-child(1)::before {
+    background-image: url("../img/001-delivery-truck.png");
+}
+
+.feature-item:nth-child(2)::before {
+    background-image: url("../img/002-book.png");
+}
+
+.feature-item:nth-child(3)::before {
+    background-image: url("../img/003-call.png");
+}
+
+.header .info {
+    float: left;
+}
+
+.header .row:nth-child(2) .col-5 {
+    margin-top: -70px;
+    background-color: #FFFFFF;
+}
+
+.header .info {
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.header .info .info-second-name {
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #3A75A0;
+    margin-bottom: 0;
+}
+
+.header .info .info-first-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #3A75A0;
+}
+
+.social {
+    display: flex;
+}
+
+.social p {
+    margin-right: 25px;
+}
+
+.arrow {
+    margin-top: 40%;
+}
+
+.header .col-5 {
+    display: flex;
+}
+
+.header .quote {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 46px;
+    color: #3A75A0;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+h2 {
+    color: #3A75A0;
+}
+
+.finish-deal {
+    font-size: 18px;
+}
+
+.finish-deal thead td {
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.finish-deal thead td:first-child {
+    color: #F9B050;
+}
+
+.finish-deal thead td:first-child::before {
+    content: '';
+    background-image: url("../img/Line.png");
+    height: 2px;
+    width: 10px;
+}
+
+.finish-deal tbody td:not(:last-child) {
+    padding-right: 30px;
+}
+
+.finish-deal tbody tr:not(:last-child) td {
+    padding-bottom: 10px;
+}
+
+.finish-deal tbody tr:first-child td {
+    padding-top: 70px;
+}
+
+main .row {
+    padding: 115px;
 }
