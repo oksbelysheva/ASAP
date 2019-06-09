@@ -234,7 +234,6 @@ header .phone {
     text-align: center;
     line-height: 75px;
     width: 410px;
-    height: 75px;
 }
 
 .feature-item::before {
@@ -360,8 +359,11 @@ h2 {
     padding-top: 70px;
 }
 
-main .row {
-    padding: 115px;
+main .row,
+footer .row {
+    padding-top: 115px;
+    padding-left: 115px;
+    padding-right: 115px;
 }
 
 .prev {
@@ -382,4 +384,96 @@ main .row {
     position: absolute;
     display: flex;
     margin-left: -60px;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #404040;
+}
+
+footer .row .col-4 {
+    padding-right: 105px;
+}
+
+input,
+select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    line-height: 50px;
+    width: 100%;
+}
+
+input:focus,
+select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+footer .button {
+    margin-top: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+footer .row .col-4:last-child {
+    background: #3A75A0;
+    color: white;
+}
+
+footer img {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    padding-right: 15px;
+}
+
+footer .row {
+    padding-right: 0;
+}
+
+footer .map-info {
+    z-index: 3;
+    position: absolute;
+    margin: auto;
+    background-color: #FFFFFF;
+    width: 400px;
+    right: 50%;
+    margin-right: -200px;
+    bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+}
+
+footer .map-info::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+.blue-block {
+    height: 150%;
+    width: 50%;
+    right: 0;
+    background-color: #3A75A0;
+    position: absolute;
+    z-index: 0;
+    margin-top: -30px;
+    margin-bottom: -500px;
+}
+
+.email {
+    color: #F9B050;
 }
