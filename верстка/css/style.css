@@ -363,3 +363,23 @@ h2 {
 main .row {
     padding: 115px;
 }
+
+.prev {
+    height: 74px;
+    width: 74px;
+    background-image: url("../img/prev.png");
+    left: 0
+}
+
+.next {
+    height: 74px;
+    width: 74px;
+    background-image: url("../img/next.png");
+}
+
+.block-arrow {
+    margin-top: -87px;
+    position: absolute;
+    display: flex;
+    margin-left: -60px;
+}

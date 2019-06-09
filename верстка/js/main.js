@@ -1,3 +1,10 @@
 $(document).ready(function() {
-    $('.header').height($(window).height());
+    $('.gallery').slick({
+        prevArrow: '<img src="./img/prev.png">',
+        nextArrow: '<img src="./img/next.png">',
+        infinite: true,
+        autoplay: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+    });
 })
