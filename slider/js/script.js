@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   $("#carousel").owlCarousel({
 
     nav: true,
@@ -27,17 +26,12 @@ $(document).ready(function () {
     const carousel_item = owl_active.getElementsByClassName("carousel__item")[0];
     const carousel_image = carousel_item.getElementsByTagName("a")[0];
 
-    function chooseImage() {
-      switch (carousel_image.className) {
-        case 'second':
-          trapezoid.style.backgroundImage = "url(./img/trap1.png)";
-          break;
-        case 'first':
-          trapezoid.style.backgroundImage = "url(./img/trap2.png)";
-          break;
-      }
 
+
+    function chooseImage() {
+      trapezoid.style.backgroundImage = carousel_image.getAttribute("data-src");
     }
     setTimeout(chooseImage, 300);
   }
+  trapImageChange();
 });
