@@ -1,21 +1,112 @@
-.reg_count_down{
+.reg_count_down {
     display: block;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-form{
+.reg_form {
     display: flex;
     flex-direction: column;
 }
 
-.reg_form label{
+.reg_form label,
+.reg_form p {
     padding-bottom: 10px;
     color: #383838;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
+}
+
+.reg_form input {
+    height: 34px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    margin-bottom: 18px;
+}
+
+.reg_position {
+    border-collapse: collapse;
+    margin-bottom: 18px;
+}
+
+.reg_position th {
+    text-transform: uppercase;
+    color: #009a52;
+    vertical-align: middle;
+    height: 28px;
+    text-align: left;
+}
+
+.reg_position input {
+    margin: auto;
+}
+
+.reg_position tr {
+    border-top: 1px solid #009a52;
+    border-bottom: 1px solid #009a52;
+}
+
+.reg_position tr:not(:first-child) {
+    height: 80px;
+}
+
+.reg_choose_pay{
+    display: none;
+}
+
+.reg_choose_pay + label{
+    display: block;
+    width: 130px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #cccccc;
+    float: left;
+    margin-right: 22px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#reg_сhoose_pay_card + label {
+    background-image: url(../img/card.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+#reg_сhoose_pay_bill + label {
+    background-image: url(../img/bill.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.reg_choose_pay:checked + label {
+    color: #000000;
+    border-color: #8ac33f;
+    outline: 3px solid #8ac33f !important;
+}
+
+.reg_submit{
+    color: #fff;
+    background-color: #8ac33f;
+    border: none;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    text-align: center;
+    width: 130px;
+}
+
+.reg_submit:hover{
+    background-color: #9cda4a;
+    text-align: center;
 }
