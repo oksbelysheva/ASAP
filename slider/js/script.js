@@ -1,8 +1,6 @@
 $(document).ready(function () {
   $("#carousel").owlCarousel({
-
     nav: true,
-    dots: true,
 
     slideSpeed: 300,
     paginationSpeed: 400,
