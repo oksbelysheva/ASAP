@@ -12,13 +12,13 @@
         <form class="reg_form">
             <p>Заполните пожалуйста все поля, выберите способ оплаты и нажмите кнопку «Оформить заказ»</p>
             <label for="reg_name">Ваше имя*</label>
-            <input type="text" id="reg_name" required>
+            <input type="text" id="reg_name">
             <label for="reg_surname">Ваша фамилия*</label>
-            <input type="text" id="reg_surname" required>
+            <input type="text" id="reg_surname">
             <label for="reg_email">Ваш E-Mail*</label>
-            <input type="email" id="reg_email" required>
+            <input type="email" id="reg_email">
             <label for="reg_tel">Телефон*</label>
-            <input class="phonemasked" type="tel" id="reg_tel" required>
+            <input class="phonemasked" type="tel" id="reg_tel">
 
             <table class="reg_position">
                 <tr>
@@ -38,14 +38,14 @@
                     <td>Практикум. Создание ресурсного состояния</td>
                     <td>
                         <a href="#" class="reg_count_down"></a>
-                        <input type="number" class="reg_count" min="0" required>
+                        <input type="number" class="reg_count" min="0">
                     </td>
                     <td>5000р</td>
                 </tr>
             </table>
 
             <label for="reg_confirm">Соглашение на обработку персональных данных.*</label>
-            <input type="checkbox" id="reg_confirm" required>
+            <input type="checkbox" id="reg_confirm">
             <label for="reg_confirm">Заполняя данную анкету, вы выражаете свое согласие на сбор, обработку,
                 использование, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение),
                 извлечение, обезличивание, блокирование, удаление своих персональных данных, указанных в настоящей
@@ -61,7 +61,8 @@
 
             <p>*Обязательные для заполнения пункты</p>
 
-            <input type="submit" value="Оформить заказ" class="reg_submit">
+            <button type="submit" class="reg_submit">Оформить заказ</button>
+            <span class="error" id="error"></span>
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
